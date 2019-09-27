@@ -95,3 +95,10 @@ public/
 .dynamodb/
 
 # End of https://www.gitignore.io/api/node
+
+# VS code
+.vscode/
+
+#Git ignore
+
+.gitignore
