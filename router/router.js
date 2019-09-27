@@ -7,6 +7,7 @@ router.get('/suma/:a/:b', (req, res ) => {
     let b = parseInt(req.params.b)
     let c = a + b 
     var out = JSON.stringify({
+        "msg" : "Operación suma",
         "numero 1" : a,
         "numero 2" : b,
         "resultado": c }
@@ -19,6 +20,7 @@ router.get('/resta/:m/:n', (req, res ) => {
     let n = parseInt(req.params.n)
     let c = m -n 
     var out = JSON.stringify({
+        "msg" : "Operación resta",
         "numero 1" : m,
         "numero 2" : n,
         "resultado": c }
@@ -33,6 +35,7 @@ router.get('/multiplicacion/:d/:e', (req, res ) => {
     let e = parseInt(req.params.e)
     let c = d * e 
     var out = JSON.stringify({
+        "msg" : "Operación multiplicación",
         "numero 1" : d,
         "numero 2" : e,
         "resultado": c }
@@ -49,6 +52,7 @@ router.get('/division/:c/:d', (req, res ) => {
         res.send(JSON.stringify({"Error" : "Division por cero"}))
     } 
     var out = JSON.stringify({
+        "msg" : "Operación división",
         "numero 1" : c,
         "numero 2" : d,
         "resultado": r }
