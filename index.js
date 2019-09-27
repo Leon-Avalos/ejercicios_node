@@ -6,6 +6,7 @@ app.use(router)
 
 app.use('/', (req, res, next) => {
     console.log("Paso por aca")
+    res.send(JSON.stringify({"message": "Wilkommen"}))
     next()
 });
 
@@ -13,6 +14,7 @@ app.use('/', (req, res, next) => {
 
 app.use("/", (req, res) =>{
     console.log("No se encontro")
+    res.send({"message" : "No se encontro la url"}).status(404)
 })
 
 
